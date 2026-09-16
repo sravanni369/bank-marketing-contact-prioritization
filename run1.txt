@@ -1,0 +1,38 @@
+{
+  "rows": 45211,
+  "train": 31647,
+  "test": 13564,
+  "test_positives": 3449,
+  "train_rate": 0.05814137200998515,
+  "test_rate": 0.25427602477145383,
+  "capacity": 2712,
+  "random_expected_hits": 689.5965791801827,
+  "models": [
+    {
+      "model": "unweighted",
+      "selected": 2712,
+      "hits": 1478,
+      "precision": 0.5449852507374632,
+      "recall": 0.42853000869817337,
+      "threshold_calls": 1,
+      "threshold_hits": 1
+    },
+    {
+      "model": "book_weighted",
+      "selected": 2712,
+      "hits": 1482,
+      "precision": 0.5464601769911505,
+      "recall": 0.42968976514931867,
+      "threshold_calls": 5702,
+      "threshold_hits": 2437
+    }
+  ],
+  "features": [
+    "balance",
+    "pdays",
+    "previous",
+    "housing",
+    "loan",
+    "poutcome"
+  ]
+}

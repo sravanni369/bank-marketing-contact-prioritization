@@ -1,0 +1,16 @@
+{
+  "dataset": "UCI Bank Marketing",
+  "authors": "S. Moro, P. Rita, P. Cortez (2012)",
+  "doi": "https://doi.org/10.24432/C5K306",
+  "license": "CC BY 4.0",
+  "download_url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "path_in_archive": "bank.zip/bank-full.csv",
+  "downloaded_on": "2026-09-16",
+  "file": "bank-full.csv",
+  "sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+  "rows": 45211,
+  "columns": 17,
+  "separator": ";",
+  "positives": 5289,
+  "modified": false
+}

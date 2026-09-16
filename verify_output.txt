@@ -1,0 +1,19 @@
+distinct feature rows: train 13456 test 10698 shared 3061 test rows with a train twin 5768
+month at rows 0, split-1, split, last: ['may', 'apr', 'apr', 'nov']
+chronological split: {'unweighted': {'hits': 1478, 'auc': 0.7357, 'ap': 0.5107}, 'book_weighted': {'hits': 1482, 'auc': 0.7356, 'ap': 0.5093}, 'k': 2712, 'random': np.float64(689.6), 'majority_acc': np.float64(0.7457)}
+ seed  hits_unw  hits_wt  auc_unw  auc_wt  random  diff
+    0       727      735   0.7115  0.7115   317.3     8
+    1       721      738   0.7002  0.7014   317.3    17
+    2       701      705   0.6962  0.6970   317.3     4
+    3       683      680   0.6828  0.6821   317.3    -3
+    4       722      724   0.6969  0.6969   317.3     2
+    5       744      739   0.7048  0.7039   317.3    -5
+    6       741      739   0.7087  0.7089   317.3    -2
+    7       738      733   0.7049  0.7040   317.3    -5
+    8       745      746   0.7217  0.7212   317.3     1
+    9       735      732   0.7094  0.7096   317.3    -3
+diff mean 1.4 std 6.9; auc_unw mean 0.7037 auc_wt mean 0.7036
+C=1 unweighted     hits=1478 calls@0.5=1
+C=1 book_weighted  hits=1482 calls@0.5=5702
+C=1e+42 unweighted     hits=1483 calls@0.5=1
+C=1e+42 book_weighted  hits=1482 calls@0.5=5704
