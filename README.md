@@ -60,7 +60,7 @@ that holdout prevalence; the stratified table is the like-for-like comparison.
 
 | Model | Calls | Hits | Precision | Recall | AUC-ROC | Calls at 0.5 threshold |
 |---|---:|---:|---:|---:|---:|---:|
-| Random at the budget (baseline) | 2,712 | 689.6 | 0.254 | 0.200 | 0.500 | – |
+| Random at the budget (baseline) | 2,712 | 689.6 | 0.254 | 0.200 | 0.5 by definition | – |
 | Unweighted logistic regression | 2,712 | 1,478 | 0.545 | 0.429 | 0.7357 | 1 |
 | Book-weighted (`1/mean(y)`) | 2,712 | 1,482 | 0.546 | 0.430 | 0.7356 | 5,702 |
 
