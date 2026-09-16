@@ -62,5 +62,5 @@ for b in range(500):
     h = {n:int(t[np.argsort(-res[n][idx],kind='stable')[:kk]].sum()) for n in res}
     diffs.append(h['wt']-h['unw']); unws.append(h['unw'])
 diffs=np.array(diffs); unws=np.array(unws)
-print("bootstrap unweighted hits: mean %.1f sd %.1f [2.5,97.5]=%s" % (unws.mean(), unws.std(), np.percentile(unws,[2.5,97.5])))
+print("bootstrap resamples: %d" % len(unws)); print("bootstrap unweighted hits: mean %.1f sd %.1f [2.5,97.5]=%s" % (unws.mean(), unws.std(), np.percentile(unws,[2.5,97.5])))
 print("bootstrap (wt-unw) hits: mean %.2f sd %.2f [2.5,97.5]=%s, P(diff<=0)=%.3f" % (diffs.mean(), diffs.std(), np.percentile(diffs,[2.5,97.5]), (diffs<=0).mean()))

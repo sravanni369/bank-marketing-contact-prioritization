@@ -128,7 +128,10 @@ python verify.py       # leakage count, stratified seeds, book C; prints verify_
 
 Python 3.13.5, NumPy 2.2.6, pandas 2.3.1, scikit-learn 1.8.0, SciPy 1.16.3, Windows 11.
 Three runs of `analysis.py` on 2026-09-16 were byte-identical. The same numbers were first
-obtained on scikit-learn 1.7.2. `audit_a.py` and `audit_b.py` are the auditor's own checks.
+obtained on scikit-learn 1.7.2. `audit_a.py` and `audit_b.py` are the auditor's own checks;
+their printed output is `audit_output.txt`, which is where the bootstrap interval, rank
+correlation, top-k overlap, intercepts, iteration counts and `poutcome` rates in this README
+come from.
 
 ## Files
 
@@ -139,5 +142,6 @@ obtained on scikit-learn 1.7.2. `audit_a.py` and `audit_b.py` are the auditor's 
 | `audit_a.py`, `audit_b.py` | Evaluation-auditor scripts (bootstrap, rank overlap, decile rates) |
 | `run1.txt`, `run2.txt`, `run3.txt` | Three identical runs of `analysis.py` |
 | `verify_output.txt` | Output of `verify.py` |
+| `audit_output.txt` | Output of `audit_a.py` and `audit_b.py`, run 2026-09-16 |
 | `results/predictions.csv` | Holdout row index, label and both models' scores |
 | `data/bank-full.csv`, `data/provenance.json` | The data and where it came from |
